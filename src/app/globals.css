@@ -15,6 +15,15 @@ body {
 
 @layer base {
   :root {
+    --pristine: #F2E8DA;
+    --peach-fuzz: #FFBE98;
+    --honey-peach: #DCBD9E;
+    --peach-puree: #EFCFBA;
+    --peach-pink: #FA9A85;
+    --georgia-peach: #F97272;
+    --peach-blossom: #DE8286;
+    --peach-pearl: #FFB2A5;
+
     /* CSS: .bg-gradient { background: var(--gradient) } */
     --gradient: linear-gradient(to top left,#FFBE98,#F97272);
 
