@@ -24,65 +24,63 @@ body {
     --peach-blossom: #DE8286;
     --peach-pearl: #FFB2A5;
 
-    /* CSS: .bg-gradient { background: var(--gradient) } */
-    --gradient: linear-gradient(to top left,#FFBE98,#F97272);
-
-    --background: 24 65% 6.4%;
-    --foreground: 24 10% 99%;
-
-    --muted: 24 16% 24.8%;
-    --muted-foreground: 24 10% 58%;
-
-    --popover: 24 30% 8.8%;
-    --popover-foreground: 24 10% 99%;
-
-    --card: 24 30% 8.8%;
-    --card-foreground: 24 10% 99%;
-
-    --border: 24 16% 24.8%;
-    --input: 24 16% 24.8%;
+    --background: 60 9% 98.04%;
+    --foreground: 20 14.3% 4.1%;
 
     --primary: 24 100% 80%;
-    --primary-foreground: 24 10% 8%;
+    --primary-foreground: 60 9% 98%;
 
-    --secondary: 24 16% 24.8%;
-    --secondary-foreground: 24 10% 99%;
+    --card: 60 5% 96.04%;
+    --card-foreground: 213.6 100% 4.9%;
 
-    --accent: 24 16% 24.8%;
-    --accent-foreground: 24 10% 99%;
+    --popover: 60 9% 98.04%;
+    --popover-foreground: 213.6 100% 4.9%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 24 10% 99%;
+    --secondary: 214.74 100% 92.55%;
+    --secondary-foreground: 20 14.3% 0.98%;
 
+    --muted: 213.6 100% 95.1%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 60 9% 95.1%;
+    --accent-foreground: 60 9% 50%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 90.2%;
+    --input: 0 0% 90.2%;
     --ring: 24 100% 80%;
+
+    --radius: 0.5rem;
   }
 
   .dark {
     /* CSS: .bg-gradient { background: var(--gradient) } */
-    --gradient: linear-gradient(to top left,#FFBE98,#F97272);
+    --gradient: linear-gradient(to top left,#FFBE98,#FFB2A5,#F97272);
 
     --background: 24 65% 6.4%;
     --foreground: 24 10% 99%;
 
-    --muted: 24 16% 24.8%;
+    --muted: 24 25% 24%;
     --muted-foreground: 24 10% 58%;
 
-    --popover: 24 30% 8.8%;
+    --popover: 24 44% 10.4%;
     --popover-foreground: 24 10% 99%;
 
-    --card: 24 30% 8.8%;
+    --card: 24 44% 10.4%;
     --card-foreground: 24 10% 99%;
 
-    --border: 24 16% 24.8%;
-    --input: 24 16% 24.8%;
+    --border: 24 25% 24%;
+    --input: 24 25% 24%;
 
     --primary: 24 100% 80%;
     --primary-foreground: 24 10% 8%;
 
-    --secondary: 24 16% 24.8%;
+    --secondary: 24 25% 24%;
     --secondary-foreground: 24 10% 99%;
 
-    --accent: 24 16% 24.8%;
+    --accent: 24 25% 24%;
     --accent-foreground: 24 10% 99%;
 
     --destructive: 0 62.8% 30.6%;

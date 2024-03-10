@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { type FC } from "react";
-import GradientWrapper from "../wrappers/GradientWrapper";
-import SectionWrapper from "../wrappers/SectionWrapper";
+import GradientWrapper from "../global/gradient-wrapper";
+import SectionWrapper from "../global/section-wrapper";
 
 const testimonials = [
   {

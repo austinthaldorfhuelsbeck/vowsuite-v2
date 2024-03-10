@@ -3,24 +3,35 @@ import { dark } from "@clerk/themes";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import ThemeProvider from "./providers/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Vowsuite - Capture, curate, celebrate.",
-  description: "Vowsuite is the seamless video gallery platform where every event is transformed into a shared, unforgettable journey.",
+	title: "Vowsuite - Capture, curate, celebrate.",
+	description:
+		"Vowsuite is the seamless video gallery platform where every event is transformed into a shared, unforgettable journey.",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <ClerkProvider appearance={{ baseTheme: dark }}>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
-    </ClerkProvider>
-  );
+	return (
+		<ClerkProvider appearance={{ baseTheme: dark }}>
+			<html lang="en" suppressHydrationWarning>
+				<body className={inter.className}>
+					<ThemeProvider
+						attribute="class"
+						defaultTheme="system"
+						enableSystem
+						disableTransitionOnChange
+					>
+						{children}
+					</ThemeProvider>
+				</body>
+			</html>
+		</ClerkProvider>
+	);
 }

@@ -2,6 +2,7 @@ import { UserButton } from "@clerk/nextjs";
 import { User } from "@clerk/nextjs/server";
 import Image from "next/image";
 import Link from "next/link";
+import FreeTrialButton from "../free-trial";
 
 type Props = {
 	user?: User;
@@ -13,6 +14,15 @@ const navigation = [
 	{ title: "Pricing", href: "#pricing" },
 	{ title: "Customers", href: "#testimonial" },
 ];
+
+const LoginButton = () => (
+	<Link
+		href="/agency"
+		className="py-1 px-2 my-auto rounded hover:bg-primary/10 hover:text-primary transition-all text-sm font-semibold"
+	>
+		Log in
+	</Link>
+);
 
 const Navigation = ({ user }: Props) => {
 	return (
@@ -43,14 +53,9 @@ const Navigation = ({ user }: Props) => {
 			</nav>
 
 			<aside className="flex gap-2">
-				<Link
-					href="/agency"
-					className="bg-primary py-1 px-2 rounded hover:bg-primary/10 hover:text-primary transition-all text-sm text-primary-foreground font-semibold"
-				>
-					Start your free trial →
-				</Link>
+				<LoginButton />
+				<FreeTrialButton />
 				<UserButton />
-				{/* <ModeToggle /> */}
 			</aside>
 		</header>
 	);

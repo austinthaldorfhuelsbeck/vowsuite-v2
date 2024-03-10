@@ -1,9 +1,9 @@
-import CTA from "@/components/site/CTA";
-import Features from "@/components/site/Features";
-import Hero from "@/components/site/Hero";
-import Pricing from "@/components/site/Pricing";
-import Testimonial from "@/components/site/Testimonial";
-import VisualFeatures from "@/components/site/VisualFeatures";
+import CTA from "@/components/site/cta";
+import Features from "@/components/site/features";
+import Hero from "@/components/site/hero";
+import Pricing from "@/components/site/pricing";
+import Testimonial from "@/components/site/testimonial";
+import VisualFeatures from "@/components/site/visual-features";
 
 const Home = () => {
 	return (

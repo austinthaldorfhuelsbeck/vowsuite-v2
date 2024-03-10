@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionWrapper from "../wrappers/SectionWrapper";
+import SectionWrapper from "../global/section-wrapper";
 
 const features = [
   {
