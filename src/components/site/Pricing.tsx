@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { Check } from "lucide-react";
 import Link from "next/link";
-import { pricingPlans } from "../../lib/constants";
+import { pricingPlans } from "../../../lib/constants";
 import SectionWrapper from "../global/section-wrapper";
 
 const mostPopPricingBg =
@@ -28,9 +28,7 @@ const Pricing = () => (
 					}}
 				>
 					<div className="space-y-4 border-b p-8 text-center">
-						<span className="font-medium text-[var(--peach-fuzz)]">
-							{item.name}
-						</span>
+						<span className="font-medium text-primary">{item.name}</span>
 						<div className="text-3xl font-semibold">
 							${item.price} <span className="text-xl font-normal">/mo</span>
 						</div>
@@ -49,8 +47,12 @@ const Pricing = () => (
 							<Link href={`/agency?plan=${item.priceId}`}>
 								<button
 									className={clsx(
-										"w-full text-center bg-primary p-2 rounded-md text-primary-foreground font-bold",
-										{ "!bg-muted-foreground": !item.isMostPop },
+										"w-full text-center bg-primary p-2 rounded-md text-primary-foreground font-bold hover:bg-primary/10 hover:text-foreground transition-all duration-250",
+										{
+											"!bg-muted-foreground border border-muted-foreground hover:!bg-muted-foreground/10":
+												!item.isMostPop,
+										},
+										{ "border border-primary": item.isMostPop },
 									)}
 								>
 									Get Started

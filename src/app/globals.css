@@ -15,15 +15,6 @@ body {
 
 @layer base {
   :root {
-    --pristine: #F2E8DA;
-    --peach-fuzz: #FFBE98;
-    --honey-peach: #DCBD9E;
-    --peach-puree: #EFCFBA;
-    --peach-pink: #FA9A85;
-    --georgia-peach: #F97272;
-    --peach-blossom: #DE8286;
-    --peach-pearl: #FFB2A5;
-
     --background: 60 9% 98.04%;
     --foreground: 20 14.3% 4.1%;
 
@@ -40,7 +31,7 @@ body {
     --secondary-foreground: 20 14.3% 0.98%;
 
     --muted: 213.6 100% 95.1%;
-    --muted-foreground: 0 0% 40%;
+    --muted-foreground: 0 0% 30%;
 
     --accent: 60 9% 95.1%;
     --accent-foreground: 60 9% 50%;

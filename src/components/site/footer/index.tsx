@@ -8,7 +8,7 @@ const footerLinks = [
 		title: "Learn",
 		links: [
 			{ name: "About us", href: "/" },
-			{ name: "Pricing", href: "/#pricing" },
+			{ name: "Pricing", href: "/site/#pricing" },
 			{ name: "Getting Started", href: "/" },
 		],
 	},
@@ -41,7 +41,7 @@ const socialLinks = [
 ];
 
 const Footer = () => (
-	<footer className="bg-stone-200 p-4 sm:p-6 dark:bg-stone-800">
+	<footer className="p-4 sm:p-6 bg-card border-t">
 		<div className="mx-auto max-w-screen-xl">
 			<div className="md:flex md:justify-between">
 				<div className="mb-6 md:mb-0 flex items-center gap-2">
@@ -59,10 +59,10 @@ const Footer = () => (
 				<div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
 					{footerLinks.map((section) => (
 						<div key={section.title}>
-							<h2 className="mb-6 text-sm font-semibold uppercase text-stone-900 dark:text-white">
+							<h2 className="mb-6 text-sm font-semibold uppercase">
 								{section.title}
 							</h2>
-							<ul className="text-stone-600 dark:text-stone-400">
+							<ul className="text-muted-foreground">
 								{section.links.map((link) => (
 									<li key={link.name} className="mb-4">
 										<Link className="text-sm hover:underline" href={link.href}>

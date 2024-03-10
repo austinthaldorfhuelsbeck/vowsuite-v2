@@ -27,14 +27,16 @@ const LoginButton = () => (
 const Navigation = ({ user }: Props) => {
 	return (
 		<header className="p-4 flex items-center justify-between relative">
-			<aside className="flex items-center gap-2 px-5">
-				<Image
-					src={"./assets/logo.svg"}
-					alt="Vowsuite"
-					width={24}
-					height={24}
-				/>
-				<span className="font-bold">Vowsuite</span>
+			<aside className="px-5">
+				<Link href="/" className="flex gap-2 items-center">
+					<Image
+						src={"./assets/logo.svg"}
+						alt="Vowsuite"
+						width={24}
+						height={24}
+					/>
+					<span className="font-bold">Vowsuite</span>
+				</Link>
 			</aside>
 
 			<nav className="hidden md:block absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%]">
@@ -43,7 +45,7 @@ const Navigation = ({ user }: Props) => {
 						<li key={index}>
 							<Link
 								href={item.href}
-								className="rounded px-2 py-1 font-medium text-sm hover:bg-primary/10 transition-all hover:text-primary"
+								className="rounded px-2 py-1 font-light text-sm hover:bg-primary/10 transition-all hover:text-primary"
 							>
 								{item.title}
 							</Link>
