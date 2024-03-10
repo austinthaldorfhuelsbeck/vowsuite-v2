@@ -1,7 +1,7 @@
+import { pricingPlans } from "@/lib/constants";
 import clsx from "clsx";
 import { Check } from "lucide-react";
 import Link from "next/link";
-import { pricingPlans } from "../../../lib/constants";
 import SectionWrapper from "../global/section-wrapper";
 
 const mostPopPricingBg =

@@ -217,21 +217,21 @@ const MenubarShortcut = ({
 MenubarShortcut.displayname = "MenubarShortcut";
 
 export {
-	Menubar,
-	MenubarCheckboxItem,
-	MenubarContent,
-	MenubarGroup,
-	MenubarItem,
-	MenubarLabel,
-	MenubarMenu,
-	MenubarPortal,
-	MenubarRadioGroup,
-	MenubarRadioItem,
-	MenubarSeparator,
-	MenubarShortcut,
-	MenubarSub,
-	MenubarSubContent,
-	MenubarSubTrigger,
-	MenubarTrigger
+    Menubar,
+    MenubarCheckboxItem,
+    MenubarContent,
+    MenubarGroup,
+    MenubarItem,
+    MenubarLabel,
+    MenubarMenu,
+    MenubarPortal,
+    MenubarRadioGroup,
+    MenubarRadioItem,
+    MenubarSeparator,
+    MenubarShortcut,
+    MenubarSub,
+    MenubarSubContent,
+    MenubarSubTrigger,
+    MenubarTrigger
 };
 
